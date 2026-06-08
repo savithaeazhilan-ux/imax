@@ -1,0 +1,6 @@
+{
+  "name": "IMAX Theatre",
+  "description": "A premium IMAX Theatre website featuring real-time movie bookings, seat selectors, showtime schedules, personal dashboard, and full administrative reports control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

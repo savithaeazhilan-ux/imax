@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "Source Code Pro", monospace;
+
+  /* Custom IMAX Space Theme Colors */
+  --color-imax-dark: #050505;
+  --color-imax-card: #0e0f14;
+  --color-imax-border: rgba(255, 255, 255, 0.1);
+  --color-imax-gold: #cfa853;
+  --color-imax-blue: #00AEEF;
+  --color-imax-cyan: #00f3ff;
+  --color-imax-red: #ff334b;
+}
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: #f3f4f6;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Frosted Glass Theme Classes */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mesh-bg {
+  background: radial-gradient(circle at 80% 20%, rgba(0, 174, 239, 0.12) 0%, transparent 50%), 
+              radial-gradient(circle at 20% 80%, rgba(255, 99, 33, 0.08) 0%, transparent 50%);
+}
+
+.imax-gradient {
+  background: linear-gradient(135deg, #00AEEF 0%, #0072bc 100%);
+}
+
+/* Custom premium scrollbar for immersive layout */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00AEEF;
+}
+
+/* Curved screen representational shadow mapping */
+.imax-curve-glow {
+  box-shadow: 0 -15px 40px -10px rgba(0, 174, 239, 0.45);
+}
+
+.imax-laser-beam {
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 243, 255, 0.3) 50%, transparent 100%);
+}
+
